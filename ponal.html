@@ -1,1 +1,26 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <p id="par1">Я назар, hеllo</p>
+  <input type="button" id="but1">
+  <input type="button" id="but2">
+  <input type="button" id="but3">
+  <input type="button" id="but4">
+  <input type="button" id="but5">
+<script>
+$ (document). ready ( function(){
+  $("#but1").click (function(){$("#par1").fadeOut (3000)});
+  $("#but2").click (function(){$("#par1").fadeIn (3000)});
+  $("#but3").click (function(){$("#par1").fadeTo (3000, 0.3)});
+  $("#but4").click (function(){$("#par1").fadeTo (3000, 0.8)});
+  $("#but5").click (function(){$("#par1").fadeOut (3000, function(){
+    alert ("Абзац был импостер");}); }); });
+</script>
+</body>
+</html>
